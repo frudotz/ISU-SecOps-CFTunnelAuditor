@@ -86,7 +86,7 @@ Amaç korkutmak değil, **bilinçli karar aldırmak**tır.
 /cloudflared-tunnel-auditor
 ├── docs/                   # Proje dökümantasyonu ve rehberler
 ├── researchs/              # Derin araştırma çıktıları
-├── specs/                  # 
+├── specs/                  # Teknik analizler
 └── src/                    # Script kaynak kodları
     └── auditor.sh          # Scriptin kendisi
 
