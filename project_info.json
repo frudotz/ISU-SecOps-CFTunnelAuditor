@@ -1,0 +1,38 @@
+{
+  "projectName": "Cloudflared Tunnel Auditor",
+  "category": "Security / Service Auditing",
+  "author": "frudotz",
+  "version": "0.1.0",
+  "description": "Cloudflare Tunnel (cloudflared) yapılandırmalarını güvenlik, sürdürülebilirlik ve yanlış konfigürasyon riskleri açısından denetleyen audit aracı",
+  "features": [
+    "Named Tunnel ve Quick Tunnel (trycloudflare) tespiti",
+    "cert.pem ve credentials-file denetimi",
+    "config.yml / config.yaml yapılandırma analizi",
+    "cloudflared process ve systemd servis kontrolü",
+    "Reboot sonrası çalışabilirlik analizi",
+    "HTTP / HTTPS / SSH / TCP exposure tespiti",
+    "CRITICAL / WARN / INFO seviyeli raporlama"
+  ],
+  "requirements": {
+    "os": [
+      "Ubuntu 20.04+",
+      "Debian 11+",
+      "OpenWRT (kısıtlı mod)"
+    ],
+    "language": "Bash / POSIX Shell",
+    "dependencies": [
+      "cloudflared",
+      "systemd (opsiyonel)",
+      "grep",
+      "awk",
+      "sed"
+    ]
+  },
+  "scope": {
+    "guaranteesSecurity": false,
+    "auditOnly": true,
+    "productionSafe": true,
+    "detectsQuickTunnel": true
+  },
+  "license": "GPL-3.0"
+}
